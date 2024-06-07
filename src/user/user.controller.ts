@@ -21,4 +21,8 @@ export class UserController {
       return this.userService.update(id, dto)
   }
 
+  @Get("/problems")
+  async resetProblems(){
+    return this.userService.resetProblems()
+  }
 }
